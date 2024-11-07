@@ -12,23 +12,32 @@
     <div class="content">
         <div class="navbar navbar-dark bg-dark navbar-expand-lg">
             <!-- Logo -->
-            <div class="navbar-logo">
-                burshop
-            <img class="logo-foto" src="../imagenes/logo (2).png" alt="logo">
-            </div>    
-            
+            <div class="navbar-logo d-flex align-items-center">
+                <span class="navbar-brand">burshop</span>
+                <img class="logo-foto" src="../imagenes/logo (2).png" alt="logo" style="width: 40px; height: 40px; margin-left: 10px;">
+            </div>     
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <!-- Enlaces de navegación -->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="./contactos.html">Contacto</a></li>
-            </ul>
-
-            <!-- Barra de búsqueda -->
-            <div class="navbar-search">
-                <input type="text" placeholder="Buscar productos...">
-                <button type="button">Buscar</button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ofertas">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactos.html">Contacto</a>
+                    </li>
+                </ul>
+        
+                <!-- Barra de búsqueda -->
+                <div class="navbar-search d-flex align-items-center ms-3">
+                    <input type="text" class="form-control" placeholder="Buscar productos...">
+                    <button class="btn btn-outline-light ms-2" type="button">Buscar</button>
+                </div>
             </div>
         </div>   
         <!-- Ofertas Section -->
